@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function display_(){
+            const urParas = new URLSearchParams(window.location.search);
+            document.getElementById('sid').innerHTML = urParas.get('sid')
+            document.getElementById('sname').innerHTML = urParas.get('sname')
+            document.getElementById('phone').innerHTML = urParas.get('phone')
+        }
+    </script>
+    <title>20-get-data</title>
+</head>
+<body onload="display_();">
+    <p id="sid"></p>
+    <p id="sname"></p>
+    <p id="phone"></p>
+</body>
+</html>
